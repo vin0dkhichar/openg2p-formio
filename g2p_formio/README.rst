@@ -49,6 +49,6 @@ Authors
 Maintainers
 ~~~~~~~~~~~
 
-This module is part of the `OpenG2P/openg2p-formio <https://github.com/OpenG2P/openg2p-formio/tree/15.0-develop/g2p_formio>`_ project on GitHub.
+This module is part of the `OpenG2P/openg2p-formio <https://github.com/OpenG2P/openg2p-formio/tree/develop-15.0/g2p_formio>`_ project on GitHub.
 
 You are welcome to contribute.
