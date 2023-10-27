@@ -1,9 +1,9 @@
-from odoo import fields, models, api
+from odoo import fields, models
 
-class Inherit_Program(models.Model):
-    _inherit="g2p.program"
-    
-    self_service_portal_frm=fields.Many2one(
-        "formio.builder",
-        string="Program Form",
-    )
+
+class G2PProgram(models.Model):
+    _inherit = "g2p.program"
+
+    self_service_portal_form = fields.Many2one("formio.builder", string="Program Form")
+
+    is_multiple_form_submission = fields.Boolean(default=False)

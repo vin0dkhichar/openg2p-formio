@@ -3,14 +3,15 @@
         <field name="name">program_formio_builder_form</field>
         <field name="model">formio.builder</field>
         <field name="inherit_id" ref="formio.view_formio_builder_form" />
+        <field name="priority" eval="100" />
         <field name="arch" type="xml">
-            
-            <xpath expr="//page[@name='actions_api']" position="replace"></xpath>
-            <xpath expr="//page[@name='extra_assets']" position="replace"></xpath>
-            <xpath expr="//page[@name='form_display_settings']" position="replace"></xpath>
-            <xpath expr="//page[@name='form_permissions']" position="replace"></xpath>
-            <xpath expr="//page[@name='portal_settings']" position="replace"></xpath>
-            <xpath expr="//page[@name='public_settings']" position="replace"></xpath>
+
+            <xpath expr="//page[@name='actions_api']" position="replace" />
+            <xpath expr="//page[@name='extra_assets']" position="replace" />
+            <xpath expr="//page[@name='form_display_settings']" position="replace" />
+            <xpath expr="//page[@name='form_permissions']" position="replace" />
+            <xpath expr="//page[@name='portal_settings']" position="replace" />
+            <xpath expr="//page[@name='public_settings']" position="replace" />
             <xpath expr="//page[@name='formio_components_api']" position="attributes">
                 <attribute name="invisible">1</attribute>
             </xpath>
@@ -51,7 +52,21 @@
         </field>
     </record>
 
-    <menuitem id="formio.menu_formio_form" name="Forms" parent="formio.menu_formio_root" sequence="70" action="formio.action_formio_form" active="false"/>
-    <menuitem id="formio.menu_formio_extra_asset" name="Extra Assets" parent="formio.menu_formio_configuration" sequence="50" action="formio.action_formio_extra_asset" active="false"/>
+    <menuitem
+        id="formio.menu_formio_form"
+        name="Forms"
+        parent="formio.menu_formio_root"
+        sequence="70"
+        action="formio.action_formio_form"
+        active="false"
+    />
+    <menuitem
+        id="formio.menu_formio_extra_asset"
+        name="Extra Assets"
+        parent="formio.menu_formio_configuration"
+        sequence="50"
+        action="formio.action_formio_extra_asset"
+        active="false"
+    />
 
 </odoo>
