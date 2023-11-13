@@ -2,7 +2,7 @@
 {
     "name": "OpenG2P Formio",
     "category": "G2P",
-    "version": "15.0.1.1.0",
+    "version": "15.0.1.2.0",
     "sequence": 1,
     "summary": "Form builders allow you to create, manage, and use dynamic forms with ease.",
     "author": "OpenG2P",
@@ -15,12 +15,8 @@
         "views/program_view.xml",
         "wizard/g2p_self_service_program_view_wizard.xml",
     ],
-    "assets": {
-        "web.assets_backend": [],
-        "web.assets_qweb": [],
-        "web.assets_frontend": [],
-        "web.assets_common": [],
-    },
+    "external_dependencies": {"python": ["formio-data"]},
+    "assets": {},
     "demo": [],
     "images": [],
     "application": True,
