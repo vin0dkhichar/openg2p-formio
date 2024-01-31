@@ -37,16 +37,16 @@
         <field name="arch" type="xml">
             <data>
                 <field name="public" position="attributes">
-                    <attribute name="invisible">1</attribute>
+                    <attribute name="column_invisible">1</attribute>
                 </field>
                 <field name="formio_res_model_id" position="attributes">
-                    <attribute name="invisible">1</attribute>
-                </field>
+                    <attribute name="column_invisible">1</attribute>
+                </field>record
                 <field name="portal" position="attributes">
-                    <attribute name="invisible">1</attribute>
+                    <attribute name="column_invisible">1</attribute>
                 </field>
                 <field name="formio_version_id" position="attributes">
-                    <attribute name="invisible">1</attribute>
+                    <attribute name="column_invisible">1</attribute>
                 </field>
             </data>
         </field>
