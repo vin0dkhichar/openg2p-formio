@@ -9,8 +9,9 @@
     "website": "https://openg2p.org",
     "license": "Other OSI approved licence",
     "development_status": "Alpha",
-    "depends": ["formio", "g2p_programs", "formio_storage_filestore"],
+    "depends": ["auth_oidc", "formio", "g2p_programs", "formio_storage_filestore"],
     "data": [
+        "views/auth_oauth_provider.xml",
         "views/formio_builder.xml",
         "views/program_view.xml",
         "wizard/g2p_self_service_program_view_wizard.xml",
